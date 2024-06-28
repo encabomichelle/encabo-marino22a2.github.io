@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Thai Spice Haven</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="#">Thai Spice Haven</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#special">Special</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#chef">Chef</a></li>
+        <li><a href="#client">Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li></li><a href="login.html">Login</a></li>
+      
+  
+          
+      </ul>
+      <div class="nav__btn">
+        <button class="btn"><i class="ri-shopping-bag-fill"></i></button>
+      </div>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="images/home.jpeg" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>From the bustling streets of <span>Bangkok</span>.</h1>
+        <p class="section__description">
+          "Experience the vibrant flavors and aromas of authentic Thai Cruisine at Thai Spice Haven"
+        </p>
+        <div class="header__btn">
+          <button class="btn">Get Started</button>
+        </div>  
+      </div>
+    </header>
+
+    <section class="section__container special__container" id="special">
+      <h2 class="section__header">Our Special Dish</h2>
+      <p class="section__description">
+        Each dish promises an unforgettable dining experience, blending
+        innovation with tradition to delight your senses.
+      </p>
+      <div class="special__grid">
+        <div class="special__card">
+          <img src="images/Tom Yum Goong.webp" alt="special" />
+          <h4>Tom Yum Goong</h4>
+          <p>
+            Spicy and sour Thai soup with shrimp, lemongrass, lime leaves, galangal, and chili peppers.
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">₱190.00</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="images/Gaeng Daeng.jpg" alt="special" />
+          <h4>Gaeng Daeng</h4>
+          <p>
+            Creamy and spicy dish made with red curry paste, coconut milk, meat and vegetables, garnished with kaffir lime
+            leaves and Thai basil.
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">₱250.00</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="images/Gaeng Keow Wan Gai.jpg" alt="special" />
+          <h4>Gaeng Keow Wan Gai</h4>
+          <p>
+            Thai green curry with chicken, is a spicy and aromatic dish made with green curry pasta, coconut milk, chicken, and vegetables,
+            garnished with Thai basil.
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">₱220.50</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="section__container menu__container" id="menu">
+    <h2 class="section__header">Menu</h2>
+    <div class="menu-container">
+      <div class="tabs">
+          <button class="tab-link" onclick="openTab(event, 'breakfast')">Breakfast</button>
+          <button class="tab-link" onclick="openTab(event, 'dinner')">Dinner</button>
+          <button class="tab-link" onclick="openTab(event, 'dessert')">Dessert</button>
+      </div>
+
+      <div id="breakfast" class="tab-content">
+          <h2>Breakfast Menu</h2>
+          <div class="menu-item">
+              <img src="images/Thai-Prawn-Omelette.jpeg" alt="Thai Omelette">
+              <div class="menu-item-info">
+                  <h3>Thai Omelette</h3>
+                  <p>₱50.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Mango Sticky Rice.jpg" alt="Mango Sticky Rice">
+              <div class="menu-item-info">
+                  <h3>Sticky Rice and Mango</h3>
+                  <p>₱110.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Thai Soup.jpg" alt="Thai Rice Soup">
+              <div class="menu-item-info">
+                  <h3>Thai Rice Soup</h3>
+                  <p>₱100.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Pad Thai.jpg" alt="Pad Thai">
+              <div class="menu-item-info">
+                  <h3>Pad Thai</h3>
+                  <p>₱120.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/pad krapow kung.webp" alt="Pad Krapow">
+              <div class="menu-item-info">
+                  <h3>Green Curry</h3>
+                  <p>₱180.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+      </div>
+
+      <div id="dinner" class="tab-content">
+          <h2>Dinner Menu</h2>
+          <div class="menu-item">
+              <img src="images/Thai Green Curry.jpg" alt="Thai Green Curry">
+              <div class="menu-item-info">
+                  <h3>Thai Green Curry</h3>
+                  <p>₱280.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Thai khao man gai.jpg" alt="Thai khao man gai">
+              <div class="menu-item-info">
+                  <h3>hai khao man gai</h3>
+                  <p>₱250.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Tom Yum Soup.jpg" alt="Tom Yum Soup">
+              <div class="menu-item-info">
+                  <h3>Tom Yum Soup</h3>
+                  <p>₱170.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Massaman Curry.jpg" alt="Massaman Curry">
+              <div class="menu-item-info">
+                  <h3>Massaman Curry</h3>
+                  <p>₱290.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Pad sew ew.jpg" alt="Pad See Ew">
+              <div class="menu-item-info">
+                  <h3>Pad See Ew</h3>
+                  <p>₱200.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+
+      <div id="dessert" class="tab-content">
+          <h2>Dessert Menu</h2>
+          <div class="menu-item">
+              <img src="images/Thai Lod Chong.webp" alt="Thai Lod Chong">
+              <div class="menu-item-info">
+                  <h3>Thai Lod Chong</h3>
+                  <p>₱90.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Khanom Tom.jpg" alt="Khanom Tom">
+              <div class="menu-item-info">
+                  <h3>Khanom Tom</h3>
+                  <p>₱100.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/khanom chun.jpg" alt="khanom chun">
+              <div class="menu-item-info">
+                  <h3>khanom chun</h3>
+                  <p>₱95.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Black Rice Pudding.png" alt="Black Sticky Rice Pudding">
+              <div class="menu-item-info">
+                  <h3>Black Sticky Rice Pudding</h3>
+                  <p>₱100.00</p>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </div>
+          <div class="menu-item">
+              <img src="images/Thai Banana Roti.jpg" alt="Thai Banana Roti">
+              <div class="menu-item-info">
+                  <h3>Thai Roti</h3>
+                  <p>₱110.00</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    
+    <section class="about_us" id="about">
+    <div class="about-container">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="images/about.jpg" alt="Spice Thai Haven Restaurant" class="about-img">
+            <div class="about-text">
+                <p>Welcome to Spice Thai Haven, your go-to destination for authentic Thai cuisine. Our restaurant offers a cozy atmosphere and a wide range of delicious Thai dishes that will transport your taste buds to the streets of Thailand.</p>
+                <p>Our chefs use the freshest ingredients to create dishes that are not only flavorful but also beautifully presented. Whether you're a fan of spicy curries, savory stir-fries, or delicate desserts, we have something for everyone.</p>
+                <button id="learnMoreBtn">Learn More</button>
+                <p id="extraInfo" class="hidden">At Spice Thai Haven, we believe in the importance of community and strive to create a welcoming environment for all our guests. Join us for special events and cooking classes to explore the rich culinary traditions of Thailand.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="chef" id="chef">
+      <img src="assets/topping.png" alt="topping" class="chef__bg" />
+      <div class="section__container chef__container">
+        <div class="chef__image">
+          <img src="images/chefs.jpeg" alt="chef" />
+        </div>
+        <div class="chef__content">
+          <h2 class="section__header">Cooked By The Best Chefs In The World</h2>
+          <p class="section__description">
+            Experience culinary excellence crafted by master chefs from around
+            the globe. Our team of culinary virtuosos brings together expertise,
+            innovation, and passion to create unforgettable dining experiences
+            that redefine gastronomy.
+          </p>
+          <ul class="chef__list">
+            <li>
+              <span><i class="ri-checkbox-fill"></i></span>
+              Savour culinary brilliance from master chefs worldwide.
+            </li>
+            <li>
+              <span><i class="ri-checkbox-fill"></i></span>
+              Experience innovative creations with attention to detail.
+            </li>
+            <li>
+              <span><i class="ri-checkbox-fill"></i></span>
+              Enjoy dishes crafted with an unwavering passion for perfection.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">What Our Customers Are Saying</h2>
+      <p class="section__description">
+        Discover firsthand experiences and testimonials from our valued patrons.
+        Explore the feedback and reviews that showcase our commitment to
+        quality, service, and customer satisfaction.
+      </p>
+      <div class="client__swiper">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                  Thai Spice Haven was exceptional, offering a perfect balance of spicy, sweet, and savory flavors. Each dish was fresh
+                  aromatic, and beautifully presented. Highly recommend for an authentic culinary experince.
+                </p>
+                <img src="images/ai image1.jpeg" alt="client" />
+                <h4>Ayesha Laxamana</h4>
+                <h5>Business Executive</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                  I always turn to Thai Spice Haven for a quick and delicious meal. Their
+                  efficient service and mouthwatering options never disappoint!
+                </p>
+                <img src="images/ai image3.jpeg" alt="client" />
+                <h4>Van Walker</h4>
+                <h5>Food Blogger</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                  Thai Spice Haven has become my go-to for all my catering needs. Their
+                  attention to detail and exceptional customer service make
+                  every event a success.
+                </p>
+                <img src="images/ai image2.jpg" alt="client" />
+                <h4>Michael Jordy</h4>
+                <h5>Event Planner</h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation__container" id="reservation">
+    <div class="form-section">
+      <h1>Reservation</h1>
+      <form id="reservation-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" required min="1">
+
+          <input type="submit" value="Reserve">
+      </form>
+      <div id="confirmation" class="hidden"></div>
+  </div>
+  <div class="image-section">
+      <img src="images/reservation (2).jpg" alt="Restaurant Image">
+  </div>
+</div>
+</div>
+</section>
+
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#">Thai Spice Haven</a>
+          </div>
+          <p class="section__description">
+            Embark on a gastronomic journey with Thai Spice Haven, where every bite tells
+            a story and every dish is crafted to perfection.
+          </p>
+        </div>
+        <div class="footer__col"></
+          <ul class="footer__links">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a>
+          <a href="https://www.youtube.com/YourChannel" target="_blank">YouTube</a>
+          <a href="mailto:your-email@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/YourProfile" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/YourProfile" target="_blank">Twitter</a>
+      </div>
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul class="footer__links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Meal Deals</a></li>
+            <li><a href="#">Catering Options</a></li>
+            <li><a href="#">Seasonal Offerings</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Information</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Nutrition Information</a></li>
+            <li><a href="#">Allergen Information</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bar">
+        Designed by ENCABO MICHELLE & GEORGE MARINO - BSIT-22A2 for ICT 008 Final Project.
+      </div>
+      
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
